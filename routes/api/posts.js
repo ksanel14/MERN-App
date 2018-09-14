@@ -1,7 +1,9 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
-// @route public GET
-router.get("/test", (req, res) => res.json({ msg: "Posts work" }));
+// @route   GET api/posts/test
+// @desc    Tests post route
+// @access  Public
+router.get('/test', (req, res) => res.json({ msg: 'Posts Works' }));
 
 module.exports = router;
